@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMDcwMjAyODEzNzAyMDM5OTk0NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzhiNjcxYWRlZGI0ODQ1OTZfZmVhMzA2ZjlfdGVlbl9idWRnZXRfY2FsY3VsYXRvci5odG1sLTQzOCJ9LCJleHAiOjE3OTI3ODgyNDMsImlhdCI6MTc5Mjc4NDY0MywiYWxnIjoiUlMyNTYifQ.o7n41q6j_iDxjYPxxtc7cWWZWBPbjxNLZRjPmMI7MijrciXUzDRsmWA7RhCrlVCfx1HDzt2QkJ0NGz5Ju44wrHJ0a8PjPKHQ3BYowgvN41BudbcT4s4HfzfFIpjPb_ifg4Sn7xGT2fmdkM6d79OcRcjN1-1UvI6gHEsUsdqBUYTrAM1cGrprvACdUemXy94AIygBK5aEnIQz_CogAeHqdo9MPP8NVvHkLQXbGafyFSI-awxQwj659v3aecBgXqYM3sQWx45slP5Gk2xiYzG2KeHyeVGOic_QtQvdUg9WcZ9EZ63A5BcmjxvbMgm2ylGUA9NI8VrGDDCca1PjzST1aw","c_8b671adedb484596_fea306f9_teen_budget_calculator.html-438")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=yield sa(w(a.ownerDocument.styleSheets),b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StashFlow — Teen Budget &amp; Money Calculator</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scroll::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.4); }
+    .custom-scroll::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.5); border-radius: 9999px; }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.78);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}.top-0{top:0px}.z-30{z-index:30}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-5{margin-top:1.25rem}.ml-2{margin-left:0.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-64{height:16rem}.h-fit{height:-moz-fit-content;height:fit-content}.h-full{height:100%}.h-2\.5{height:0.625rem}.max-h-52{max-height:13rem}.max-h-80{max-height:20rem}.max-h-44{max-height:11rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-full{width:100%}.w-28{width:7rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-1{gap:0.25rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-teal-500\/30{border-color:rgb(20 184 166 / 0.3)}.border-teal-500\/50{border-color:rgb(20 184 166 / 0.5)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-pink-500\/30{border-color:rgb(236 72 153 / 0.3)}.border-sky-500\/30{border-color:rgb(14 165 233 / 0.3)}.border-slate-700\/80{border-color:rgb(51 65 85 / 0.8)}.border-slate-800\/60{border-color:rgb(30 41 59 / 0.6)}.border-slate-800\/90{border-color:rgb(30 41 59 / 0.9)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-indigo-500\/20{background-color:rgb(99 102 241 / 0.2)}.bg-purple-400{--tw-bg-opacity:1;background-color:rgb(192 132 252 / var(--tw-bg-opacity, 1))}.bg-purple-500\/15{background-color:rgb(168 85 247 / 0.15)}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-sky-400{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/80{background-color:rgb(2 6 23 / 0.8)}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-teal-500{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.bg-teal-500\/15{background-color:rgb(20 184 166 / 0.15)}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-indigo-500\/15{background-color:rgb(99 102 241 / 0.15)}.bg-pink-500\/15{background-color:rgb(236 72 153 / 0.15)}.bg-sky-500\/15{background-color:rgb(14 165 233 / 0.15)}.bg-slate-800\/90{background-color:rgb(30 41 59 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-teal-400{--tw-gradient-from:#2dd4bf var(--tw-gradient-from-position);--tw-gradient-to:rgb(45 212 191 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-emerald-500{--tw-gradient-to:rgb(16 185 129 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #10b981 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-slate-100{--tw-gradient-to:rgb(241 245 249 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #f1f5f9 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-indigo-500{--tw-gradient-to:#6366f1 var(--tw-gradient-to-position)}.to-teal-300{--tw-gradient-to:#5eead4 var(--tw-gradient-to-position)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-2\.5{padding:0.625rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.pb-1{padding-bottom:0.25rem}.pr-1{padding-right:0.25rem}.pr-2{padding-right:0.5rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-right{text-align:right}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-purple-200{--tw-text-opacity:1;color:rgb(233 213 255 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-teal-300{--tw-text-opacity:1;color:rgb(94 234 212 / var(--tw-text-opacity, 1))}.text-teal-400{--tw-text-opacity:1;color:rgb(45 212 191 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-pink-300{--tw-text-opacity:1;color:rgb(249 168 212 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-teal-500\/20{--tw-shadow-color:rgb(20 184 166 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-teal-500 *::selection{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.selection\:text-slate-950 *::selection{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.selection\:bg-teal-500::selection{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.selection\:text-slate-950::selection{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.last\:border-0:last-child{border-width:0px}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-500\/30:hover{background-color:rgb(99 102 241 / 0.3)}.hover\:bg-rose-500\/25:hover{background-color:rgb(244 63 94 / 0.25)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800\/80:hover{background-color:rgb(30 41 59 / 0.8)}.hover\:bg-teal-400:hover{--tw-bg-opacity:1;background-color:rgb(45 212 191 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500\/30:hover{background-color:rgb(16 185 129 / 0.3)}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-rose-400:hover{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.focus\:border-teal-400:focus{--tw-border-opacity:1;border-color:rgb(45 212 191 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:col-span-3{grid-column:span 3 / span 3}.sm\:col-span-5{grid-column:span 5 / span 5}.sm\:block{display:block}.sm\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-4{gap:1rem}.sm\:p-5{padding:1.25rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-teal-500 selection:text-slate-950">
+
+  <!-- Top Header -->
+  <header class="sticky top-0 z-30 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-4 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-400 via-emerald-500 to-indigo-500 flex items-center justify-center shadow-lg shadow-teal-500/20 font-extrabold text-slate-950 text-lg">
+          SF
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg sm:text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-teal-300 bg-clip-text text-transparent">
+              StashFlow
+            </h1>
+            <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-300 border border-teal-500/30">
+              Teen Budget App
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 hidden sm:block">Track subscriptions, gaming, skincare, hangouts &amp; savings goals</p>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="flex items-center flex-wrap gap-2">
+        <label for="currencySelect" class="sr-only">Currency</label>
+        <select id="currencySelect" class="bg-slate-900 border border-teal-500/50 text-teal-300 font-semibold text-xs sm:text-sm rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-teal-400">
+          <option value="PKR">PKR (Rs)</option>
+          <option value="USD">USD ($)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="CAD">CAD (C$)</option>
+          <option value="AUD">AUD (A$)</option>
+          <option value="INR">INR (₹)</option>
+        </select>
+
+        <button id="btnQuickPresets" type="button" class="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-indigo-500/20 text-indigo-300 hover:bg-indigo-500/30 border border-indigo-500/30 transition">
+          + Quick Teen Presets
+        </button>
+
+        <button id="btnDownloadAppTop" type="button" class="text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-lg bg-teal-500 hover:bg-teal-400 text-slate-950 transition shadow-sm shadow-teal-500/20">
+          Download App (.html)
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="max-w-7xl mx-auto mt-3 flex items-center gap-1.5 overflow-x-auto custom-scroll pb-1">
+      <button type="button" data-tab="dashboard" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition whitespace-nowrap bg-teal-500 text-slate-950">
+        Dashboard &amp; Budget
+      </button>
+      <button type="button" data-tab="subsgaming" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition whitespace-nowrap text-slate-300 hover:bg-slate-800/80">
+        Subscriptions &amp; Gaming Lab
+      </button>
+      <button type="button" data-tab="goals" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition whitespace-nowrap text-slate-300 hover:bg-slate-800/80">
+        Wishlist &amp; Savings Goals
+      </button>
+      <button type="button" data-tab="standalone" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition whitespace-nowrap text-slate-300 hover:bg-slate-800/80">
+        Use as Standalone App &amp; Backup
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 space-y-6">
+
+    <!-- Top KPI Banner (Always Visible) -->
+    <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-medium text-slate-400">Monthly Cash In</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 font-medium">Income</span>
+        </div>
+        <div id="kpiIncome" class="text-xl sm:text-2xl font-extrabold text-white mt-1">Rs 25,833</div>
+        <p id="kpiIncomeSub" class="text-[11px] text-slate-400 mt-1">3 income source(s) active</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-medium text-slate-400">Total Monthly Spent</span>
+          <span id="kpiSpentBadge" class="text-xs px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-300 font-medium">89% of income</span>
+        </div>
+        <div id="kpiSpent" class="text-xl sm:text-2xl font-extrabold text-white mt-1">Rs 22,892</div>
+        <p id="kpiBudgetCapSub" class="text-[11px] text-slate-400 mt-1">Planned category caps: Rs 29,500</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-medium text-slate-400">Leftover / Free Cash</span>
+          <span id="kpiLeftoverBadge" class="text-xs px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-300 font-medium">In the Green</span>
+        </div>
+        <div id="kpiLeftover" class="text-xl sm:text-2xl font-extrabold text-teal-300 mt-1">Rs 2,942</div>
+        <p id="kpiLeftoverSub" class="text-[11px] text-slate-400 mt-1">Unspent money you can save or spend</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-medium text-slate-400">Sub &amp; Gaming Drain</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/15 text-purple-300 font-medium">Yearly Impact</span>
+        </div>
+        <div id="kpiYearlyDrain" class="text-xl sm:text-2xl font-extrabold text-purple-300 mt-1">Rs 56,700/yr</div>
+        <p id="kpiMonthlyDrainSub" class="text-[11px] text-slate-400 mt-1">Rs 4,725/mo on subs + gaming</p>
+      </div>
+    </section>
+
+    <!-- TAB 1: DASHBOARD & BUDGET -->
+    <div id="tab-dashboard" class="tab-panel space-y-6">
+
+      <!-- 50/30/20 Teen Rule Health Bar -->
+      <div class="glass-card rounded-2xl p-4 sm:p-5">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+          <div>
+            <h2 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
+              Teen Money Balance Check
+              <span id="healthStatusPill" class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold">Healthy Teen Balance</span>
+            </h2>
+            <p class="text-xs text-slate-400">Teen guideline: ~40% Fun &amp; Wants (Gaming, Subs, Hangouts), ~30% Essentials &amp; Care (Skincare, Transit, School), ~30% Savings &amp; Future</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="btnResetSample" type="button" class="text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition">
+              Load Sample Teen Budget
+            </button>
+            <button id="btnClearAll" type="button" class="text-xs px-2.5 py-1.5 rounded-lg bg-rose-500/15 hover:bg-rose-500/25 text-rose-300 border border-rose-500/30 transition">
+              Start Fresh ($0)
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div class="bg-slate-900/80 rounded-xl p-3 border border-slate-800">
+            <div class="flex justify-between text-slate-300 font-medium">
+              <span>Wants (Subs, Gaming, Hangouts)</span>
+              <span id="ratioWants">40% (Rs 10,392)</span>
+            </div>
+            <div class="w-full h-2 bg-slate-800 rounded-full mt-2 overflow-hidden">
+              <div id="barWants" class="h-full bg-purple-400 rounded-full transition-all duration-300" style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="bg-slate-900/80 rounded-xl p-3 border border-slate-800">
+            <div class="flex justify-between text-slate-300 font-medium">
+              <span>Personal Care, School &amp; Transit</span>
+              <span id="ratioNeeds">29% (Rs 7,500)</span>
+            </div>
+            <div class="w-full h-2 bg-slate-800 rounded-full mt-2 overflow-hidden">
+              <div id="barNeeds" class="h-full bg-sky-400 rounded-full transition-all duration-300" style="width: 29%;"></div>
+            </div>
+          </div>
+          <div class="bg-slate-900/80 rounded-xl p-3 border border-slate-800">
+            <div class="flex justify-between text-slate-300 font-medium">
+              <span>Savings + Unspent Cash</span>
+              <span id="ratioSavings">31% (Rs 7,942)</span>
+            </div>
+            <div class="w-full h-2 bg-slate-800 rounded-full mt-2 overflow-hidden">
+              <div id="barSavings" class="h-full bg-emerald-400 rounded-full transition-all duration-300" style="width: 31%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Income Section + Add Expense Form + Charts -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- Left Column: Income & Add Expense (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+
+          <!-- Income Card -->
+          <div class="glass-card rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h2 class="text-base font-bold text-white">1. Cash In (Income &amp; Allowance)</h2>
+                <p class="text-xs text-slate-400">Weekly items automatically convert to monthly (×4.33)</p>
+              </div>
+            </div>
+
+            <form id="incomeForm" class="grid grid-cols-1 sm:grid-cols-12 gap-2 mb-4">
+              <input id="incName" type="text" required="" placeholder="e.g. Allowance, Tutoring, Part-time cafe" class="sm:col-span-5 bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-teal-400">
+              <input id="incAmount" type="number" step="0.01" min="0.01" required="" placeholder="Amount" class="sm:col-span-3 bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-teal-400">
+              <select id="incFreq" class="sm:col-span-2 bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-teal-400">
+                <option value="monthly">Monthly</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweekly">Bi-weekly</option>
+                <option value="once">One-time</option>
+              </select>
+              <button type="submit" class="sm:col-span-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg px-3 py-2 text-xs sm:text-sm transition">
+                Add
+              </button>
+            </form>
+
+            <div id="incomeList" class="space-y-2 max-h-52 overflow-y-auto custom-scroll pr-1">
+          <div class="flex items-center justify-between bg-slate-900/90 border border-slate-800/90 rounded-xl px-3 py-2">
+            <div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-100">Weekly Pocket Money / Allowance</div>
+              <div class="text-[11px] text-slate-400">Rs 2,500 weekly → <span class="text-emerald-300 font-medium">Rs 10,833/mo</span></div>
+            </div>
+            <button type="button" data-del-income="inc-1" class="text-xs text-slate-400 hover:text-rose-400 px-2 py-1 rounded transition" title="Remove">
+              ✕
+            </button>
+          </div>
+        
+          <div class="flex items-center justify-between bg-slate-900/90 border border-slate-800/90 rounded-xl px-3 py-2">
+            <div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-100">Tuition / Freelancing / Side Hustle</div>
+              <div class="text-[11px] text-slate-400">Rs 12,000 monthly → <span class="text-emerald-300 font-medium">Rs 12,000/mo</span></div>
+            </div>
+            <button type="button" data-del-income="inc-2" class="text-xs text-slate-400 hover:text-rose-400 px-2 py-1 rounded transition" title="Remove">
+              ✕
+            </button>
+          </div>
+        
+          <div class="flex items-center justify-between bg-slate-900/90 border border-slate-800/90 rounded-xl px-3 py-2">
+            <div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-100">Eidi / Family Gift Cash (Monthly Avg)</div>
+              <div class="text-[11px] text-slate-400">Rs 3,000 monthly → <span class="text-emerald-300 font-medium">Rs 3,000/mo</span></div>
+            </div>
+            <button type="button" data-del-income="inc-3" class="text-xs text-slate-400 hover:text-rose-400 px-2 py-1 rounded transition" title="Remove">
+              ✕
+            </button>
+          </div>
+        </div>
+          </div>
+
+          <!-- Add Expense Item Card -->
+          <div class="glass-card rounded-2xl p-5">
+            <h2 class="text-base font-bold text-white mb-1">2. Add Expense or Subscription</h2>
+            <p class="text-xs text-slate-400 mb-3">Log subscriptions, skincare, gaming battle passes, boba runs, or savings</p>
+
+            <form id="expenseForm" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div>
+                  <label for="expName" class="block text-[11px] font-medium text-slate-400 mb-1">Item Name</label>
+                  <input id="expName" type="text" required="" placeholder="e.g. Spotify, Cleanser, Valorant VP" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-teal-400">
+                </div>
+                <div>
+                  <label for="expCategory" class="block text-[11px] font-medium text-slate-400 mb-1">Category</label>
+                  <select id="expCategory" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-slate-200 focus:outline-none focus:border-teal-400">
+                    <option value="subscriptions">Subscriptions (Music, Streaming, Apps)</option>
+                    <option value="gaming">Gaming (Passes, Skins, Games, Gear)</option>
+                    <option value="personal_care">Personal Care &amp; Style (Skincare, Hair, Clothes)</option>
+                    <option value="food_social">Food &amp; Hangouts (Boba, Snacks, Movies)</option>
+                    <option value="transport_tech">Transit &amp; Phone (Bus, Gas, Data Plan)</option>
+                    <option value="school_hobbies">School, Sports &amp; Gifts</option>
+                    <option value="savings">Savings &amp; Future Stash</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                <div>
+                  <label for="expAmount" class="block text-[11px] font-medium text-slate-400 mb-1">Cost</label>
+                  <input id="expAmount" type="number" step="0.01" min="0.01" required="" placeholder="0.00" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-teal-400">
+                </div>
+                <div>
+                  <label for="expFreq" class="block text-[11px] font-medium text-slate-400 mb-1">How Often?</label>
+                  <select id="expFreq" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-slate-200 focus:outline-none focus:border-teal-400">
+                    <option value="monthly">Monthly</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="yearly">Yearly (/12)</option>
+                    <option value="once">One-time this month</option>
+                  </select>
+                </div>
+                <div class="col-span-2 sm:col-span-1 flex items-end">
+                  <button type="submit" class="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-lg px-4 py-2 text-xs sm:text-sm transition">
+                    + Add Expense
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Charts (7 cols) -->
+        <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="glass-card rounded-2xl p-5 flex flex-col">
+            <h3 class="text-sm font-bold text-white">Where Your Money Goes</h3>
+            <p class="text-xs text-slate-400 mb-3">Share of monthly spending by teen category</p>
+            <div class="relative h-64 w-full my-auto">
+              <canvas id="categoryDoughnutChart" width="610" height="512" style="display: block; box-sizing: border-box; height: 256px; width: 305px;"></canvas>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-5 flex flex-col">
+            <h3 class="text-sm font-bold text-white">Planned Limit vs. Actual Spent</h3>
+            <p class="text-xs text-slate-400 mb-3">Click any category budget limit below to adjust it</p>
+            <div class="relative h-64 w-full my-auto">
+              <canvas id="budgetVsActualChart" width="610" height="512" style="display: block; box-sizing: border-box; height: 256px; width: 305px;"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Cards Grid -->
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base sm:text-lg font-bold text-white">3. Teen Category Breakdown &amp; Limits</h2>
+          <span class="text-xs text-slate-400">Edit monthly category caps anytime</span>
+        </div>
+        <div id="categoryCardsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-purple-500/15 text-purple-300 border-purple-500/30">
+                    Subscriptions
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Spotify, Netflix, iCloud, Nitro, Gym</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 925</div>
+                  <div class="text-[11px] text-slate-400">of Rs 2,500 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 37%; background-color: #a855f7"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Spotify Student Plan</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 175/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-1" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-1" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Netflix Shared / Mobile Plan</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 450/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-2" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-2" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">iCloud / Google One Storage</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 300/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-3" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-3" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-subscriptions">Monthly Cap (Rs):</label>
+              <input id="limit-subscriptions" data-limit-cat="subscriptions" type="number" min="0" step="500" value="2500" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-indigo-500/15 text-indigo-300 border-indigo-500/30">
+                    Gaming
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Game Pass, Battle Passes, Skins, Robux, Gear</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 3,800</div>
+                  <div class="text-[11px] text-slate-400">of Rs 4,500 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 84%; background-color: #6366f1"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Game Pass / Online Membership</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 1,800/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-4" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-4" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Battle Pass / Skins / UC / VP</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 2,000/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-5" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-5" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-gaming">Monthly Cap (Rs):</label>
+              <input id="limit-gaming" data-limit-cat="gaming" type="number" min="0" step="500" value="4500" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-pink-500/15 text-pink-300 border-pink-500/30">
+                    Personal Care &amp; Style
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Skincare, Haircuts, Thrifting, Sneakers, Hygiene</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 2,800</div>
+                  <div class="text-[11px] text-slate-400">of Rs 4,500 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 62%; background-color: #ec4899"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Face Wash, Moisturizer &amp; SPF</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 1,800/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-6" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-6" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Haircut &amp; Grooming</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 1,000/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-7" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-7" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-personal_care">Monthly Cap (Rs):</label>
+              <input id="limit-personal_care" data-limit-cat="personal_care" type="number" min="0" step="500" value="4500" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-amber-500/15 text-amber-300 border-amber-500/30">
+                    Food &amp; Hangouts
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Boba, Iced Coffee, Fast Food, Movies with Friends</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 5,667</div>
+                  <div class="text-[11px] text-slate-400">of Rs 6,500 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 87%; background-color: #f59e0b"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Cold Coffee, Chai &amp; Hangouts</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 3,467/mo (weekly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-8" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-8" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Movie Night &amp; Fast Food w/ Friends</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 2,200/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-9" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-9" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-food_social">Monthly Cap (Rs):</label>
+              <input id="limit-food_social" data-limit-cat="food_social" type="number" min="0" step="500" value="6500" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-sky-500/15 text-sky-300 border-sky-500/30">
+                    Transit &amp; Phone
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Bus Pass, Gas, Rideshare, Data Plan, Chargers</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 3,200</div>
+                  <div class="text-[11px] text-slate-400">of Rs 4,000 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 80%; background-color: #0ea5e9"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Monthly Data Package (Zong/Jazz)</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 1,200/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-10" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-10" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Fuel / Bykea / InDrive Rides</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 2,000/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-11" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-11" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-transport_tech">Monthly Cap (Rs):</label>
+              <input id="limit-transport_tech" data-limit-cat="transport_tech" type="number" min="0" step="500" value="4000" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-teal-500/15 text-teal-300 border-teal-500/30">
+                    School, Sports &amp; Gifts
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Club Dues, Art/Music Supplies, Birthday Gifts</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 1,500</div>
+                  <div class="text-[11px] text-slate-400">of Rs 2,500 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 60%; background-color: #14b8a6"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Sports / Club &amp; Friend Birthday Gift</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 1,500/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-12" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-12" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-school_hobbies">Monthly Cap (Rs):</label>
+              <input id="limit-school_hobbies" data-limit-cat="school_hobbies" type="number" min="0" step="500" value="2500" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
+                    Savings &amp; Future Stash
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">Pay-Yourself-First Transfer, Emergency Fund</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold text-white">Rs 5,000</div>
+                  <div class="text-[11px] text-slate-400">of Rs 5,000 cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300" style="width: 100%; background-color: #10b981"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ">
+                    <span class="font-medium text-slate-200">Monthly Savings Stash Transfer</span>
+                    <span class="text-[11px] text-slate-400 block">Rs 5,000/mo (monthly)</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="exp-13" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      Pause
+                    </button>
+                    <button type="button" data-del-exp="exp-13" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-savings">Monthly Cap (Rs):</label>
+              <input id="limit-savings" data-limit-cat="savings" type="number" min="0" step="500" value="5000" class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: SUBSCRIPTIONS & GAMING LAB -->
+    <div id="tab-subsgaming" class="tab-panel hidden space-y-6">
+      <div class="glass-card rounded-2xl p-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-lg font-bold text-white">Subscription &amp; Gaming Drain Simulator</h2>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+              Small monthly charges like $9.99 battle passes, Robux, Spotify, or iCloud add up fast over 12 months. Toggle items on or off below to test how much cash you free up!
+            </p>
+          </div>
+          <div class="bg-slate-900/90 border border-purple-500/30 rounded-xl px-4 py-3 text-right shrink-0">
+            <div class="text-xs text-slate-400">Potential Yearly Savings from Paused Items</div>
+            <div id="simSavedYearly" class="text-xl font-extrabold text-emerald-400">Rs 0 / yr</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Subscriptions List -->
+        <div class="glass-card rounded-2xl p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-base font-bold text-purple-300">Recurring Subscriptions</h3>
+            <span id="subsTotalBadge" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-purple-500/20 text-purple-200">Rs 925/mo (Rs 11,100/yr)</span>
+          </div>
+          <div id="subsLabList" class="space-y-2.5">
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div>
+              <div class="text-sm font-semibold text-white">Spotify Student Plan</div>
+              <div class="text-xs text-slate-400">
+                Rs 175/mo • <span class="text-purple-300 font-medium">Rs 2,100/year</span>
+              </div>
+            </div>
+            <button type="button" data-toggle-exp="exp-1" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 hover:bg-slate-700 text-slate-200">
+              Active (Click to Pause)
+            </button>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div>
+              <div class="text-sm font-semibold text-white">Netflix Shared / Mobile Plan</div>
+              <div class="text-xs text-slate-400">
+                Rs 450/mo • <span class="text-purple-300 font-medium">Rs 5,400/year</span>
+              </div>
+            </div>
+            <button type="button" data-toggle-exp="exp-2" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 hover:bg-slate-700 text-slate-200">
+              Active (Click to Pause)
+            </button>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div>
+              <div class="text-sm font-semibold text-white">iCloud / Google One Storage</div>
+              <div class="text-xs text-slate-400">
+                Rs 300/mo • <span class="text-purple-300 font-medium">Rs 3,600/year</span>
+              </div>
+            </div>
+            <button type="button" data-toggle-exp="exp-3" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 hover:bg-slate-700 text-slate-200">
+              Active (Click to Pause)
+            </button>
+          </div>
+        </div>
+        </div>
+
+        <!-- Gaming List -->
+        <div class="glass-card rounded-2xl p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-base font-bold text-indigo-300">Gaming &amp; In-Game Purchases</h3>
+            <span id="gamingTotalBadge" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-200">Rs 3,800/mo (Rs 45,600/yr)</span>
+          </div>
+          <div id="gamingLabList" class="space-y-2.5">
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div>
+              <div class="text-sm font-semibold text-white">Game Pass / Online Membership</div>
+              <div class="text-xs text-slate-400">
+                Rs 1,800/mo • <span class="text-purple-300 font-medium">Rs 21,600/year</span>
+              </div>
+            </div>
+            <button type="button" data-toggle-exp="exp-4" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 hover:bg-slate-700 text-slate-200">
+              Active (Click to Pause)
+            </button>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div>
+              <div class="text-sm font-semibold text-white">Battle Pass / Skins / UC / VP</div>
+              <div class="text-xs text-slate-400">
+                Rs 2,000/mo • <span class="text-purple-300 font-medium">Rs 24,000/year</span>
+              </div>
+            </div>
+            <button type="button" data-toggle-exp="exp-5" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 hover:bg-slate-700 text-slate-200">
+              Active (Click to Pause)
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: WISHLIST & SAVINGS GOALS -->
+    <div id="tab-goals" class="tab-panel hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-4 glass-card rounded-2xl p-5 h-fit">
+          <h2 class="text-base font-bold text-white mb-1">Add a Wishlist or Savings Goal</h2>
+          <p class="text-xs text-slate-400 mb-4">Saving up for a concert, new phone, gaming console, sneakers, or first car?</p>
+
+          <form id="goalForm" class="space-y-3">
+            <div>
+              <label for="goalName" class="block text-xs text-slate-400 mb-1">Goal Name</label>
+              <input id="goalName" type="text" required="" placeholder="e.g. Concert Tickets, New GPU, Sneakers" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+            </div>
+            <div class="grid grid-cols-2 gap-2.5">
+              <div>
+                <label for="goalTarget" class="block text-xs text-slate-400 mb-1">Target Price</label>
+                <input id="goalTarget" type="number" step="1" min="1" required="" placeholder="250" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+              </div>
+              <div>
+                <label for="goalSaved" class="block text-xs text-slate-400 mb-1">Already Saved</label>
+                <input id="goalSaved" type="number" step="1" min="0" value="0" required="" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+              </div>
+            </div>
+            <div>
+              <label for="goalMonthly" class="block text-xs text-slate-400 mb-1">Monthly Boost (How much you'll save per month)</label>
+              <input id="goalMonthly" type="number" step="1" min="1" value="30" required="" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+            </div>
+            <button type="submit" class="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-lg px-4 py-2.5 text-sm transition">
+              + Create Savings Goal
+            </button>
+          </form>
+        </div>
+
+        <div class="lg:col-span-8 space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-base font-bold text-white">Your Active Goals &amp; Time-to-Buy Calculator</h2>
+            <span id="goalsSummaryBadge" class="text-xs text-teal-300 font-medium">Total Saved: Rs 43,000 of Rs 118,000</span>
+          </div>
+          <div id="goalsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">Gaming Monitor / PS5 / GPU Upgrade</h3>
+                  <p class="text-xs text-slate-400">Rs 22,000 saved of Rs 65,000</p>
+                </div>
+                <button type="button" data-del-goal="goal-1" class="text-slate-400 hover:text-rose-400 text-xs px-1.5 py-0.5">✕</button>
+              </div>
+
+              <div class="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden my-3">
+                <div class="h-full bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full transition-all duration-300" style="width: 34%"></div>
+              </div>
+
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="text-teal-300 font-semibold">34% Complete</span>
+                <span class="text-slate-300 font-medium">
+                  ~9 mo left at Rs 5,000/mo
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+              <button type="button" data-add-goal-cash="goal-1" class="flex-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 rounded-lg py-1.5 text-xs font-semibold transition">
+                + Add Rs 1,000 to Stash
+              </button>
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">New Phone / Earbuds Upgrade</h3>
+                  <p class="text-xs text-slate-400">Rs 15,000 saved of Rs 35,000</p>
+                </div>
+                <button type="button" data-del-goal="goal-2" class="text-slate-400 hover:text-rose-400 text-xs px-1.5 py-0.5">✕</button>
+              </div>
+
+              <div class="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden my-3">
+                <div class="h-full bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full transition-all duration-300" style="width: 43%"></div>
+              </div>
+
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="text-teal-300 font-semibold">43% Complete</span>
+                <span class="text-slate-300 font-medium">
+                  ~5 mo left at Rs 4,000/mo
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+              <button type="button" data-add-goal-cash="goal-2" class="flex-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 rounded-lg py-1.5 text-xs font-semibold transition">
+                + Add Rs 1,000 to Stash
+              </button>
+            </div>
+          </div>
+        
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">Sneakers &amp; Winter Wardrobe</h3>
+                  <p class="text-xs text-slate-400">Rs 6,000 saved of Rs 18,000</p>
+                </div>
+                <button type="button" data-del-goal="goal-3" class="text-slate-400 hover:text-rose-400 text-xs px-1.5 py-0.5">✕</button>
+              </div>
+
+              <div class="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden my-3">
+                <div class="h-full bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full transition-all duration-300" style="width: 33%"></div>
+              </div>
+
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="text-teal-300 font-semibold">33% Complete</span>
+                <span class="text-slate-300 font-medium">
+                  ~4 mo left at Rs 3,000/mo
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+              <button type="button" data-add-goal-cash="goal-3" class="flex-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 rounded-lg py-1.5 text-xs font-semibold transition">
+                + Add Rs 1,000 to Stash
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: STANDALONE APP & BACKUP -->
+    <div id="tab-standalone" class="tab-panel hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6">
+        <h2 class="text-lg font-bold text-white">Use StashFlow as Your Own Standalone App (Outside Gemini)</h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">
+          This entire calculator is built as a self-contained application. Your data saves automatically in your browser's local storage, and you can run it on your computer or phone anytime without opening Gemini.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-5">
+          <button id="btnDownloadStandaloneMain" type="button" class="px-4 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-teal-500/20">
+            1. Download Standalone App (teen_budget_calculator.html)
+          </button>
+          <button id="btnExportJson" type="button" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition">
+            Export Backup (.json)
+          </button>
+          <label class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition cursor-pointer">
+            Import Backup (.json)
+            <input id="inputImportJson" type="file" accept=".json" class="hidden">
+          </label>
+          <button id="btnExportCsv" type="button" class="px-4 py-2.5 rounded-xl bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 font-semibold text-sm border border-indigo-500/30 transition">
+            Export to Excel / Sheets (.csv)
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="glass-card rounded-2xl p-5">
+          <div class="text-xs font-bold uppercase tracking-wider text-teal-400 mb-1">Option 1 • PC, Mac, or Chromebook</div>
+          <h3 class="text-base font-bold text-white mb-2">Double-Click &amp; Bookmark</h3>
+          <ol class="text-xs text-slate-300 space-y-2 list-decimal list-inside">
+            <li>Click <strong>Download Standalone App (.html)</strong> above to save <code class="text-teal-300">teen_budget_calculator.html</code> to your Desktop or Documents folder.</li>
+            <li>Double-click the downloaded file — it opens directly in Chrome, Edge, Safari, or Brave like a regular app.</li>
+            <li>Press <strong>Ctrl+D</strong> (or <strong>Cmd+D</strong> on Mac) to bookmark it on your bookmarks bar for 1-click access.</li>
+          </ol>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5">
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-1">Option 2 • Desktop App Window</div>
+          <h3 class="text-base font-bold text-white mb-2">Install as a Frameless Desktop App</h3>
+          <ol class="text-xs text-slate-300 space-y-2 list-decimal list-inside">
+            <li>Open the downloaded <code class="text-indigo-300">.html</code> file in Chrome, Brave, or Microsoft Edge.</li>
+            <li>Click the <strong>three-dots menu (⋮)</strong> in the top-right corner of the browser.</li>
+            <li>Go to <strong>Cast, save, and share → Install page as app...</strong> (or <strong>Apps → Install this site as an app</strong>).</li>
+            <li>It now gets its own icon on your Desktop/Taskbar and opens in its own standalone window!</li>
+          </ol>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5">
+          <div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-1">Option 3 • iPhone / Android Home Screen</div>
+          <h3 class="text-base font-bold text-white mb-2">Use on Your Phone</h3>
+          <ol class="text-xs text-slate-300 space-y-2 list-decimal list-inside">
+            <li>Host the file for free in 10 seconds on <strong>Netlify Drop</strong> (app.netlify.com/drop) or <strong>GitHub Pages</strong>, or open it locally on Android Chrome.</li>
+            <li>On iPhone (Safari): Tap <strong>Share → Add to Home Screen</strong>.</li>
+            <li>On Android (Chrome): Tap <strong>Menu (⋮) → Add to Home screen</strong>.</li>
+            <li>It launches full-screen from your phone's home screen just like a native app!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Quick Presets Modal -->
+  <div id="presetsModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-5 shadow-2xl">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-base font-bold text-white">Quick-Add Common Teen Expenses</h3>
+        <button id="btnClosePresets" type="button" class="text-slate-400 hover:text-white text-sm px-2 py-1">✕</button>
+      </div>
+      <p class="text-xs text-slate-400 mb-4">Click any preset below to immediately add it to your monthly budget (you can edit or delete it anytime):</p>
+      <div id="presetButtonsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto custom-scroll pr-1">
+          <button type="button" data-preset-idx="0" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Spotify Student Plan</div>
+              <div class="text-[11px] text-slate-400">Subscriptions • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 175</span>
+          </button>
+        
+          <button type="button" data-preset-idx="1" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Netflix Mobile / Shared Screen</div>
+              <div class="text-[11px] text-slate-400">Subscriptions • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 450</span>
+          </button>
+        
+          <button type="button" data-preset-idx="2" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">iCloud 50GB / Google One</div>
+              <div class="text-[11px] text-slate-400">Subscriptions • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 300</span>
+          </button>
+        
+          <button type="button" data-preset-idx="3" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Discord Nitro</div>
+              <div class="text-[11px] text-slate-400">Subscriptions • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 1,400</span>
+          </button>
+        
+          <button type="button" data-preset-idx="4" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">PC / Xbox Game Pass / PS Plus</div>
+              <div class="text-[11px] text-slate-400">Gaming • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 2,200</span>
+          </button>
+        
+          <button type="button" data-preset-idx="5" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Valorant VP / PUBG UC / Battle Pass</div>
+              <div class="text-[11px] text-slate-400">Gaming • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 2,500</span>
+          </button>
+        
+          <button type="button" data-preset-idx="6" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Skincare Refill (Cleanser &amp; Sunscreen)</div>
+              <div class="text-[11px] text-slate-400">Personal Care &amp; Style • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 2,200</span>
+          </button>
+        
+          <button type="button" data-preset-idx="7" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Haircut &amp; Salon Grooming</div>
+              <div class="text-[11px] text-slate-400">Personal Care &amp; Style • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 1,200</span>
+          </button>
+        
+          <button type="button" data-preset-idx="8" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Clothes / Sneakers / Thrifting</div>
+              <div class="text-[11px] text-slate-400">Personal Care &amp; Style • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 3,500</span>
+          </button>
+        
+          <button type="button" data-preset-idx="9" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Weekly Iced Coffee / Boba / Chai Run</div>
+              <div class="text-[11px] text-slate-400">Food &amp; Hangouts • weekly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 750</span>
+          </button>
+        
+          <button type="button" data-preset-idx="10" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Weekend Fast Food / Shawarma / Burgers</div>
+              <div class="text-[11px] text-slate-400">Food &amp; Hangouts • weekly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 1,200</span>
+          </button>
+        
+          <button type="button" data-preset-idx="11" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Monthly Mobile Package (Jazz/Zong/Ufone)</div>
+              <div class="text-[11px] text-slate-400">Transit &amp; Phone • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 1,300</span>
+          </button>
+        
+          <button type="button" data-preset-idx="12" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Bike Fuel / InDrive / Bykea Rides</div>
+              <div class="text-[11px] text-slate-400">Transit &amp; Phone • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 2,500</span>
+          </button>
+        
+          <button type="button" data-preset-idx="13" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">Friend Birthday Gift / School Event</div>
+              <div class="text-[11px] text-slate-400">School, Sports &amp; Gifts • monthly</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+Rs 1,500</span>
+          </button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastBox" class="fixed bottom-5 right-5 z-50 hidden px-4 py-2.5 rounded-xl bg-teal-500 text-slate-950 font-bold text-xs sm:text-sm shadow-xl"></div>
+
+  <script>
+    const STORAGE_KEY = 'stashflow_teen_budget_pkr_v2';
+
+    const CURRENCY_CONFIG = {
+      PKR: { symbol: 'Rs ', rateFromPKR: 1, step: 500, goalBoost: 1000, decimals: 0 },
+      USD: { symbol: '$', rateFromPKR: 1 / 278, step: 5, goalBoost: 10, decimals: 2 },
+      GBP: { symbol: '£', rateFromPKR: 0.79 / 278, step: 5, goalBoost: 10, decimals: 2 },
+      EUR: { symbol: '€', rateFromPKR: 0.92 / 278, step: 5, goalBoost: 10, decimals: 2 },
+      CAD: { symbol: 'C$', rateFromPKR: 1.38 / 278, step: 5, goalBoost: 10, decimals: 2 },
+      AUD: { symbol: 'A$', rateFromPKR: 1.52 / 278, step: 5, goalBoost: 10, decimals: 2 },
+      INR: { symbol: '₹', rateFromPKR: 84 / 278, step: 100, goalBoost: 500, decimals: 0 }
+    };
+
+    const CATEGORY_META = {
+      subscriptions: {
+        label: 'Subscriptions',
+        subtitle: 'Spotify, Netflix, iCloud, Nitro, Gym',
+        color: '#a855f7',
+        badgeBg: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+        group: 'wants'
+      },
+      gaming: {
+        label: 'Gaming',
+        subtitle: 'Game Pass, Battle Passes, Skins, Robux, Gear',
+        color: '#6366f1',
+        badgeBg: 'bg-indigo-500/15 text-indigo-300 border-indigo-500/30',
+        group: 'wants'
+      },
+      personal_care: {
+        label: 'Personal Care & Style',
+        subtitle: 'Skincare, Haircuts, Thrifting, Sneakers, Hygiene',
+        color: '#ec4899',
+        badgeBg: 'bg-pink-500/15 text-pink-300 border-pink-500/30',
+        group: 'needs'
+      },
+      food_social: {
+        label: 'Food & Hangouts',
+        subtitle: 'Boba, Iced Coffee, Fast Food, Movies with Friends',
+        color: '#f59e0b',
+        badgeBg: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+        group: 'wants'
+      },
+      transport_tech: {
+        label: 'Transit & Phone',
+        subtitle: 'Bus Pass, Gas, Rideshare, Data Plan, Chargers',
+        color: '#0ea5e9',
+        badgeBg: 'bg-sky-500/15 text-sky-300 border-sky-500/30',
+        group: 'needs'
+      },
+      school_hobbies: {
+        label: 'School, Sports & Gifts',
+        subtitle: 'Club Dues, Art/Music Supplies, Birthday Gifts',
+        color: '#14b8a6',
+        badgeBg: 'bg-teal-500/15 text-teal-300 border-teal-500/30',
+        group: 'needs'
+      },
+      savings: {
+        label: 'Savings & Future Stash',
+        subtitle: 'Pay-Yourself-First Transfer, Emergency Fund',
+        color: '#10b981',
+        badgeBg: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+        group: 'savings'
+      }
+    };
+
+    // Base presets in PKR (automatically scaled if user switches currency)
+    const QUICK_PRESETS = [
+      { name: 'Spotify Student Plan', category: 'subscriptions', amountPKR: 175, freq: 'monthly' },
+      { name: 'Netflix Mobile / Shared Screen', category: 'subscriptions', amountPKR: 450, freq: 'monthly' },
+      { name: 'iCloud 50GB / Google One', category: 'subscriptions', amountPKR: 300, freq: 'monthly' },
+      { name: 'Discord Nitro', category: 'subscriptions', amountPKR: 1400, freq: 'monthly' },
+      { name: 'PC / Xbox Game Pass / PS Plus', category: 'gaming', amountPKR: 2200, freq: 'monthly' },
+      { name: 'Valorant VP / PUBG UC / Battle Pass', category: 'gaming', amountPKR: 2500, freq: 'monthly' },
+      { name: 'Skincare Refill (Cleanser & Sunscreen)', category: 'personal_care', amountPKR: 2200, freq: 'monthly' },
+      { name: 'Haircut & Salon Grooming', category: 'personal_care', amountPKR: 1200, freq: 'monthly' },
+      { name: 'Clothes / Sneakers / Thrifting', category: 'personal_care', amountPKR: 3500, freq: 'monthly' },
+      { name: 'Weekly Iced Coffee / Boba / Chai Run', category: 'food_social', amountPKR: 750, freq: 'weekly' },
+      { name: 'Weekend Fast Food / Shawarma / Burgers', category: 'food_social', amountPKR: 1200, freq: 'weekly' },
+      { name: 'Monthly Mobile Package (Jazz/Zong/Ufone)', category: 'transport_tech', amountPKR: 1300, freq: 'monthly' },
+      { name: 'Bike Fuel / InDrive / Bykea Rides', category: 'transport_tech', amountPKR: 2500, freq: 'monthly' },
+      { name: 'Friend Birthday Gift / School Event', category: 'school_hobbies', amountPKR: 1500, freq: 'monthly' }
+    ];
+
+    function getDefaultState() {
+      return {
+        currency: 'PKR',
+        incomes: [
+          { id: 'inc-1', name: 'Weekly Pocket Money / Allowance', amount: 2500, freq: 'weekly' },
+          { id: 'inc-2', name: 'Tuition / Freelancing / Side Hustle', amount: 12000, freq: 'monthly' },
+          { id: 'inc-3', name: 'Eidi / Family Gift Cash (Monthly Avg)', amount: 3000, freq: 'monthly' }
+        ],
+        categoryLimits: {
+          subscriptions: 2500,
+          gaming: 4500,
+          personal_care: 4500,
+          food_social: 6500,
+          transport_tech: 4000,
+          school_hobbies: 2500,
+          savings: 5000
+        },
+        expenses: [
+          { id: 'exp-1', name: 'Spotify Student Plan', category: 'subscriptions', amount: 175, freq: 'monthly', active: true },
+          { id: 'exp-2', name: 'Netflix Shared / Mobile Plan', category: 'subscriptions', amount: 450, freq: 'monthly', active: true },
+          { id: 'exp-3', name: 'iCloud / Google One Storage', category: 'subscriptions', amount: 300, freq: 'monthly', active: true },
+          { id: 'exp-4', name: 'Game Pass / Online Membership', category: 'gaming', amount: 1800, freq: 'monthly', active: true },
+          { id: 'exp-5', name: 'Battle Pass / Skins / UC / VP', category: 'gaming', amount: 2000, freq: 'monthly', active: true },
+          { id: 'exp-6', name: 'Face Wash, Moisturizer & SPF', category: 'personal_care', amount: 1800, freq: 'monthly', active: true },
+          { id: 'exp-7', name: 'Haircut & Grooming', category: 'personal_care', amount: 1000, freq: 'monthly', active: true },
+          { id: 'exp-8', name: 'Cold Coffee, Chai & Hangouts', category: 'food_social', amount: 800, freq: 'weekly', active: true },
+          { id: 'exp-9', name: 'Movie Night & Fast Food w/ Friends', category: 'food_social', amount: 2200, freq: 'monthly', active: true },
+          { id: 'exp-10', name: 'Monthly Data Package (Zong/Jazz)', category: 'transport_tech', amount: 1200, freq: 'monthly', active: true },
+          { id: 'exp-11', name: 'Fuel / Bykea / InDrive Rides', category: 'transport_tech', amount: 2000, freq: 'monthly', active: true },
+          { id: 'exp-12', name: 'Sports / Club & Friend Birthday Gift', category: 'school_hobbies', amount: 1500, freq: 'monthly', active: true },
+          { id: 'exp-13', name: 'Monthly Savings Stash Transfer', category: 'savings', amount: 5000, freq: 'monthly', active: true }
+        ],
+        goals: [
+          { id: 'goal-1', name: 'Gaming Monitor / PS5 / GPU Upgrade', target: 65000, saved: 22000, monthly: 5000 },
+          { id: 'goal-2', name: 'New Phone / Earbuds Upgrade', target: 35000, saved: 15000, monthly: 4000 },
+          { id: 'goal-3', name: 'Sneakers & Winter Wardrobe', target: 18000, saved: 6000, monthly: 3000 }
+        ]
+      };
+    }
+
+    let state = loadState();
+    let doughnutChart = null;
+    let barChart = null;
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && Array.isArray(parsed.incomes) && Array.isArray(parsed.expenses)) {
+            return parsed;
+          }
+        }
+      } catch (e) {
+        // Ignore storage errors in sandboxed iframes
+      }
+      return getDefaultState();
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        // Ignore storage errors
+      }
+    }
+
+    function showToast(msg) {
+      const box = document.getElementById('toastBox');
+      box.textContent = msg;
+      box.classList.remove('hidden');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => {
+        box.classList.add('hidden');
+      }, 2600);
+    }
+
+    function toMonthly(amount, freq) {
+      const val = Number(amount) || 0;
+      if (freq === 'weekly') return val * 4.3333;
+      if (freq === 'biweekly') return val * 2.1666;
+      if (freq === 'yearly') return val / 12;
+      return val;
+    }
+
+    function getCurrCfg(code) {
+      return CURRENCY_CONFIG[code] || CURRENCY_CONFIG.PKR;
+    }
+
+    function fmtMoney(val) {
+      const num = Number(val) || 0;
+      const sign = num < 0 ? '-' : '';
+      const cfg = getCurrCfg(state.currency);
+      return sign + cfg.symbol + Math.abs(num).toLocaleString('en-US', {
+        minimumFractionDigits: cfg.decimals,
+        maximumFractionDigits: cfg.decimals
+      });
+    }
+
+    function convertAmount(val, fromCode, toCode) {
+      const fromCfg = getCurrCfg(fromCode);
+      const toCfg = getCurrCfg(toCode);
+      const inPKR = (Number(val) || 0) / fromCfg.rateFromPKR;
+      const raw = inPKR * toCfg.rateFromPKR;
+      return toCfg.decimals === 0 ? Math.round(raw) : Math.round(raw * 100) / 100;
+    }
+
+    function switchCurrency(newCode) {
+      const oldCode = state.currency || 'PKR';
+      if (oldCode === newCode) return;
+      state.incomes.forEach(inc => { inc.amount = convertAmount(inc.amount, oldCode, newCode); });
+      state.expenses.forEach(exp => { exp.amount = convertAmount(exp.amount, oldCode, newCode); });
+      Object.keys(state.categoryLimits).forEach(k => {
+        state.categoryLimits[k] = convertAmount(state.categoryLimits[k], oldCode, newCode);
+      });
+      state.goals.forEach(g => {
+        g.target = Math.max(1, convertAmount(g.target, oldCode, newCode));
+        g.saved = convertAmount(g.saved, oldCode, newCode);
+        g.monthly = Math.max(1, convertAmount(g.monthly, oldCode, newCode));
+      });
+      state.currency = newCode;
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function renderAll() {
+      saveState();
+      document.getElementById('currencySelect').value = state.currency;
+
+      const totalIncome = state.incomes.reduce((acc, item) => acc + toMonthly(item.amount, item.freq), 0);
+      const activeExpenses = state.expenses.filter(e => e.active !== false);
+      const totalSpent = activeExpenses.reduce((acc, item) => acc + toMonthly(item.amount, item.freq), 0);
+      const totalPlannedCap = Object.values(state.categoryLimits).reduce((a, b) => a + (Number(b) || 0), 0);
+      const leftover = totalIncome - totalSpent;
+
+      // Sub + Gaming Drain
+      const subsAndGamingMonthly = activeExpenses
+        .filter(e => e.category === 'subscriptions' || e.category === 'gaming')
+        .reduce((acc, item) => acc + toMonthly(item.amount, item.freq), 0);
+
+      // Update Top KPIs
+      document.getElementById('kpiIncome').textContent = fmtMoney(totalIncome);
+      document.getElementById('kpiIncomeSub').textContent = `${state.incomes.length} income source(s) active`;
+
+      document.getElementById('kpiSpent').textContent = fmtMoney(totalSpent);
+      const pctSpent = totalIncome > 0 ? Math.round((totalSpent / totalIncome) * 100) : 0;
+      document.getElementById('kpiSpentBadge').textContent = `${pctSpent}% of income`;
+      document.getElementById('kpiBudgetCapSub').textContent = `Planned category caps: ${fmtMoney(totalPlannedCap)}`;
+
+      const leftoverEl = document.getElementById('kpiLeftover');
+      const leftoverBadge = document.getElementById('kpiLeftoverBadge');
+      leftoverEl.textContent = fmtMoney(leftover);
+      if (leftover >= 0) {
+        leftoverEl.className = 'text-xl sm:text-2xl font-extrabold text-teal-300 mt-1';
+        leftoverBadge.className = 'text-xs px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-300 font-medium';
+        leftoverBadge.textContent = 'In the Green';
+        document.getElementById('kpiLeftoverSub').textContent = 'Unspent money you can save or spend';
+      } else {
+        leftoverEl.className = 'text-xl sm:text-2xl font-extrabold text-rose-400 mt-1';
+        leftoverBadge.className = 'text-xs px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 font-medium';
+        leftoverBadge.textContent = 'Over Budget';
+        document.getElementById('kpiLeftoverSub').textContent = 'Trim subscriptions, gaming, or hangouts';
+      }
+
+      document.getElementById('kpiYearlyDrain').textContent = `${fmtMoney(subsAndGamingMonthly * 12)}/yr`;
+      document.getElementById('kpiMonthlyDrainSub').textContent = `${fmtMoney(subsAndGamingMonthly)}/mo on subs + gaming`;
+
+      // Update 50/30/20 Teen Health Bars
+      let wantsSpent = 0;
+      let needsSpent = 0;
+      let savingsDirect = 0;
+
+      activeExpenses.forEach(e => {
+        const m = toMonthly(e.amount, e.freq);
+        const grp = CATEGORY_META[e.category]?.group || 'wants';
+        if (grp === 'wants') wantsSpent += m;
+        else if (grp === 'needs') needsSpent += m;
+        else savingsDirect += m;
+      });
+
+      const effectiveSavings = Math.max(0, savingsDirect + Math.max(0, leftover));
+      const denom = Math.max(totalIncome, totalSpent, 1);
+
+      const wantsPct = Math.min(100, Math.round((wantsSpent / denom) * 100));
+      const needsPct = Math.min(100, Math.round((needsSpent / denom) * 100));
+      const savingsPct = Math.min(100, Math.round((effectiveSavings / denom) * 100));
+
+      document.getElementById('ratioWants').textContent = `${wantsPct}% (${fmtMoney(wantsSpent)})`;
+      document.getElementById('barWants').style.width = `${wantsPct}%`;
+
+      document.getElementById('ratioNeeds').textContent = `${needsPct}% (${fmtMoney(needsSpent)})`;
+      document.getElementById('barNeeds').style.width = `${needsPct}%`;
+
+      document.getElementById('ratioSavings').textContent = `${savingsPct}% (${fmtMoney(effectiveSavings)})`;
+      document.getElementById('barSavings').style.width = `${savingsPct}%`;
+
+      const healthPill = document.getElementById('healthStatusPill');
+      if (leftover < 0) {
+        healthPill.textContent = 'Spending Exceeds Income';
+        healthPill.className = 'text-[11px] px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 font-semibold';
+      } else if (wantsPct > 55) {
+        healthPill.textContent = 'High Wants / Subs Alert';
+        healthPill.className = 'text-[11px] px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-semibold';
+      } else {
+        healthPill.textContent = 'Healthy Teen Balance';
+        healthPill.className = 'text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold';
+      }
+
+      renderPresetsModalButtons();
+      renderIncomeList();
+      renderCategoryCards();
+      renderCharts();
+      renderSubsGamingLab();
+      renderGoals();
+    }
+
+    function renderPresetsModalButtons() {
+      const presetContainer = document.getElementById('presetButtonsContainer');
+      if (!presetContainer) return;
+      presetContainer.innerHTML = QUICK_PRESETS.map((p, idx) => {
+        const amt = convertAmount(p.amountPKR, 'PKR', state.currency);
+        return `
+          <button type="button" data-preset-idx="${idx}" class="text-left p-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition flex items-center justify-between">
+            <div>
+              <div class="text-xs font-semibold text-white">${escapeHtml(p.name)}</div>
+              <div class="text-[11px] text-slate-400">${escapeHtml(CATEGORY_META[p.category].label)} • ${escapeHtml(p.freq)}</div>
+            </div>
+            <span class="text-xs font-bold text-teal-300 ml-2">+${fmtMoney(amt)}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderIncomeList() {
+      const container = document.getElementById('incomeList');
+      if (state.incomes.length === 0) {
+        container.innerHTML = `<div class="text-xs text-slate-500 py-3 text-center border border-dashed border-slate-800 rounded-xl">No income sources added yet. Add allowance or job pay above!</div>`;
+        return;
+      }
+
+      container.innerHTML = state.incomes.map(inc => {
+        const monthlyVal = toMonthly(inc.amount, inc.freq);
+        return `
+          <div class="flex items-center justify-between bg-slate-900/90 border border-slate-800/90 rounded-xl px-3 py-2">
+            <div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-100">${escapeHtml(inc.name)}</div>
+              <div class="text-[11px] text-slate-400">${fmtMoney(inc.amount)} ${escapeHtml(inc.freq)} → <span class="text-emerald-300 font-medium">${fmtMoney(monthlyVal)}/mo</span></div>
+            </div>
+            <button type="button" data-del-income="${escapeHtml(inc.id)}" class="text-xs text-slate-400 hover:text-rose-400 px-2 py-1 rounded transition" title="Remove">
+              ✕
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderCategoryCards() {
+      const grid = document.getElementById('categoryCardsGrid');
+      const keys = Object.keys(CATEGORY_META);
+
+      grid.innerHTML = keys.map(catKey => {
+        const meta = CATEGORY_META[catKey];
+        const items = state.expenses.filter(e => e.category === catKey);
+        const catSpent = items.filter(e => e.active !== false).reduce((acc, e) => acc + toMonthly(e.amount, e.freq), 0);
+        const limit = Number(state.categoryLimits[catKey]) || 0;
+        const pct = limit > 0 ? Math.min(100, Math.round((catSpent / limit) * 100)) : (catSpent > 0 ? 100 : 0);
+        const isOver = limit > 0 && catSpent > limit;
+
+        const itemsHtml = items.length === 0
+          ? `<div class="text-xs text-slate-500 italic py-2">No items logged in this category</div>`
+          : items.map(item => {
+              const mCost = toMonthly(item.amount, item.freq);
+              const pausedClass = item.active === false ? 'opacity-45 line-through' : '';
+              return `
+                <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/60 last:border-0">
+                  <div class="pr-2 ${pausedClass}">
+                    <span class="font-medium text-slate-200">${escapeHtml(item.name)}</span>
+                    <span class="text-[11px] text-slate-400 block">${fmtMoney(mCost)}/mo (${escapeHtml(item.freq)})</span>
+                  </div>
+                  <div class="flex items-center gap-1 shrink-0">
+                    <button type="button" data-toggle-exp="${escapeHtml(item.id)}" class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300" title="Pause or Resume">
+                      ${item.active === false ? 'Resume' : 'Pause'}
+                    </button>
+                    <button type="button" data-del-exp="${escapeHtml(item.id)}" class="text-slate-400 hover:text-rose-400 px-1.5 py-0.5" title="Delete">
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              `;
+            }).join('');
+
+        return `
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div>
+                  <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${meta.badgeBg}">
+                    ${escapeHtml(meta.label)}
+                  </span>
+                  <p class="text-[11px] text-slate-400 mt-1">${escapeHtml(meta.subtitle)}</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-extrabold ${isOver ? 'text-rose-400' : 'text-white'}">${fmtMoney(catSpent)}</div>
+                  <div class="text-[11px] text-slate-400">of ${fmtMoney(limit)} cap</div>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden mb-3">
+                <div class="h-full rounded-full transition-all duration-300"
+                     style="width: ${pct}%; background-color: ${isOver ? '#f43f5e' : meta.color}"></div>
+              </div>
+
+              <!-- Expense Items -->
+              <div class="max-h-44 overflow-y-auto custom-scroll pr-1 mb-3">
+                ${itemsHtml}
+              </div>
+            </div>
+
+            <!-- Adjust Category Limit -->
+            <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+              <label class="text-[11px] text-slate-400" for="limit-${catKey}">Monthly Cap (${getCurrCfg(state.currency).symbol.trim()}):</label>
+              <input id="limit-${catKey}" data-limit-cat="${catKey}" type="number" min="0" step="${getCurrCfg(state.currency).step}" value="${limit}"
+                class="w-28 bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs text-right text-slate-200 focus:outline-none focus:border-teal-400" />
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderCharts() {
+      const keys = Object.keys(CATEGORY_META);
+      const labels = keys.map(k => CATEGORY_META[k].label);
+      const colors = keys.map(k => CATEGORY_META[k].color);
+
+      const actualData = keys.map(k => {
+        return state.expenses
+          .filter(e => e.category === k && e.active !== false)
+          .reduce((acc, e) => acc + toMonthly(e.amount, e.freq), 0);
+      });
+
+      const limitData = keys.map(k => Number(state.categoryLimits[k]) || 0);
+
+      const ctxDoughnut = document.getElementById('categoryDoughnutChart').getContext('2d');
+      if (doughnutChart) doughnutChart.destroy();
+      doughnutChart = new Chart(ctxDoughnut, {
+        type: 'doughnut',
+        data: {
+          labels,
+          datasets: [{
+            data: actualData,
+            backgroundColor: colors,
+            borderColor: '#0f172a',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#cbd5e1', font: { size: 11 }, boxWidth: 12 }
+            }
+          }
+        }
+      });
+
+      const ctxBar = document.getElementById('budgetVsActualChart').getContext('2d');
+      if (barChart) barChart.destroy();
+      barChart = new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+          labels: keys.map(k => CATEGORY_META[k].label.split(' ')[0]),
+          datasets: [
+            {
+              label: 'Planned Cap',
+              data: limitData,
+              backgroundColor: 'rgba(148, 163, 184, 0.35)',
+              borderColor: '#94a3b8',
+              borderWidth: 1,
+              borderRadius: 6
+            },
+            {
+              label: 'Actual Spent',
+              data: actualData,
+              backgroundColor: colors,
+              borderRadius: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
+            y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { color: 'rgba(148, 163, 184, 0.1)' } }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#cbd5e1', font: { size: 11 }, boxWidth: 12 }
+            }
+          }
+        }
+      });
+    }
+
+    function renderSubsGamingLab() {
+      const subs = state.expenses.filter(e => e.category === 'subscriptions');
+      const gaming = state.expenses.filter(e => e.category === 'gaming');
+
+      const pausedSavedMonthly = state.expenses
+        .filter(e => (e.category === 'subscriptions' || e.category === 'gaming') && e.active === false)
+        .reduce((acc, e) => acc + toMonthly(e.amount, e.freq), 0);
+
+      document.getElementById('simSavedYearly').textContent = `${fmtMoney(pausedSavedMonthly * 12)} / yr`;
+
+      const subsActiveMonthly = subs.filter(e => e.active !== false).reduce((a, e) => a + toMonthly(e.amount, e.freq), 0);
+      const gamingActiveMonthly = gaming.filter(e => e.active !== false).reduce((a, e) => a + toMonthly(e.amount, e.freq), 0);
+
+      document.getElementById('subsTotalBadge').textContent = `${fmtMoney(subsActiveMonthly)}/mo (${fmtMoney(subsActiveMonthly * 12)}/yr)`;
+      document.getElementById('gamingTotalBadge').textContent = `${fmtMoney(gamingActiveMonthly)}/mo (${fmtMoney(gamingActiveMonthly * 12)}/yr)`;
+
+      const renderLabRow = (item) => {
+        const m = toMonthly(item.amount, item.freq);
+        const yr = m * 12;
+        const isActive = item.active !== false;
+        return `
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border ${isActive ? 'border-slate-800' : 'border-emerald-500/40 bg-emerald-950/10'}">
+            <div>
+              <div class="text-sm font-semibold ${isActive ? 'text-white' : 'line-through text-slate-400'}">${escapeHtml(item.name)}</div>
+              <div class="text-xs text-slate-400">
+                ${fmtMoney(m)}/mo • <span class="text-purple-300 font-medium">${fmtMoney(yr)}/year</span>
+              </div>
+            </div>
+            <button type="button" data-toggle-exp="${escapeHtml(item.id)}"
+              class="px-3 py-1.5 rounded-lg text-xs font-semibold transition ${isActive ? 'bg-slate-800 hover:bg-slate-700 text-slate-200' : 'bg-emerald-500 text-slate-950'}">
+              ${isActive ? 'Active (Click to Pause)' : 'Paused (Saving!)'}
+            </button>
+          </div>
+        `;
+      };
+
+      document.getElementById('subsLabList').innerHTML = subs.length
+        ? subs.map(renderLabRow).join('')
+        : `<div class="text-xs text-slate-500 py-4 text-center">No subscriptions logged yet.</div>`;
+
+      document.getElementById('gamingLabList').innerHTML = gaming.length
+        ? gaming.map(renderLabRow).join('')
+        : `<div class="text-xs text-slate-500 py-4 text-center">No gaming purchases logged yet.</div>`;
+    }
+
+    function renderGoals() {
+      const grid = document.getElementById('goalsGrid');
+      const totalSaved = state.goals.reduce((a, g) => a + (Number(g.saved) || 0), 0);
+      const totalTarget = state.goals.reduce((a, g) => a + (Number(g.target) || 0), 0);
+      document.getElementById('goalsSummaryBadge').textContent = `Total Saved: ${fmtMoney(totalSaved)} of ${fmtMoney(totalTarget)}`;
+
+      if (state.goals.length === 0) {
+        grid.innerHTML = `<div class="col-span-2 text-xs text-slate-500 py-8 text-center border border-dashed border-slate-800 rounded-2xl">No wishlist goals yet. Add your first savings goal on the left!</div>`;
+        return;
+      }
+
+      grid.innerHTML = state.goals.map(g => {
+        const target = Math.max(1, Number(g.target) || 1);
+        const saved = Math.min(target, Math.max(0, Number(g.saved) || 0));
+        const monthly = Math.max(1, Number(g.monthly) || 1);
+        const remaining = Math.max(0, target - saved);
+        const pct = Math.round((saved / target) * 100);
+        const monthsLeft = remaining === 0 ? 0 : Math.ceil(remaining / monthly);
+
+        return `
+          <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">${escapeHtml(g.name)}</h3>
+                  <p class="text-xs text-slate-400">${fmtMoney(saved)} saved of ${fmtMoney(target)}</p>
+                </div>
+                <button type="button" data-del-goal="${escapeHtml(g.id)}" class="text-slate-400 hover:text-rose-400 text-xs px-1.5 py-0.5">✕</button>
+              </div>
+
+              <div class="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden my-3">
+                <div class="h-full bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full transition-all duration-300" style="width: ${pct}%"></div>
+              </div>
+
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="text-teal-300 font-semibold">${pct}% Complete</span>
+                <span class="text-slate-300 font-medium">
+                  ${monthsLeft === 0 ? '🎉 Goal Reached!' : `~${monthsLeft} mo left at ${fmtMoney(monthly)}/mo`}
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+              <button type="button" data-add-goal-cash="${escapeHtml(g.id)}" class="flex-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 rounded-lg py-1.5 text-xs font-semibold transition">
+                + Add ${fmtMoney(getCurrCfg(state.currency).goalBoost)} to Stash
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function downloadStandaloneHtml() {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'teen_budget_calculator.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Downloaded teen_budget_calculator.html!');
+    }
+
+    function exportBackupJson() {
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'stashflow_teen_budget_backup.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Backup JSON exported!');
+    }
+
+    function exportCsv() {
+      const rows = [
+        ['Type', 'Category', 'Item Name', 'Raw Amount', 'Frequency', 'Monthly Equivalent', 'Status']
+      ];
+      state.incomes.forEach(inc => {
+        rows.push(['Income', 'Cash In', inc.name, inc.amount, inc.freq, toMonthly(inc.amount, inc.freq).toFixed(2), 'Active']);
+      });
+      state.expenses.forEach(exp => {
+        rows.push([
+          'Expense',
+          CATEGORY_META[exp.category]?.label || exp.category,
+          exp.name,
+          exp.amount,
+          exp.freq,
+          toMonthly(exp.amount, exp.freq).toFixed(2),
+          exp.active === false ? 'Paused' : 'Active'
+        ]);
+      });
+
+      const csvContent = rows.map(r => r.map(field => `"${String(field).replace(/"/g, '""')}"`).join(',')).join('\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'teen_budget_summary.csv';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('CSV exported for Excel / Google Sheets!');
+    }
+
+    // Event Listeners Setup
+    window.addEventListener('DOMContentLoaded', () => {
+      // Populate Quick Presets Modal
+      const presetContainer = document.getElementById('presetButtonsContainer');
+      renderPresetsModalButtons();
+
+      // Tab Navigation
+      document.querySelectorAll('.nav-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.getAttribute('data-tab');
+          document.querySelectorAll('.nav-tab').forEach(b => {
+            b.className = 'nav-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition whitespace-nowrap text-slate-300 hover:bg-slate-800/80';
+          });
+          btn.className = 'nav-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition whitespace-nowrap bg-teal-500 text-slate-950';
+
+          document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
+          document.getElementById(`tab-${target}`).classList.remove('hidden');
+        });
+      });
+
+      // Currency change with automatic value conversion
+      document.getElementById('currencySelect').addEventListener('change', (e) => {
+        switchCurrency(e.target.value);
+        renderAll();
+        showToast(`Switched currency to ${e.target.value}`);
+      });
+
+      // Add Income
+      document.getElementById('incomeForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('incName').value.trim();
+        const amount = parseFloat(document.getElementById('incAmount').value);
+        const freq = document.getElementById('incFreq').value;
+        if (!name || isNaN(amount) || amount <= 0) return;
+
+        state.incomes.push({
+          id: 'inc-' + Date.now(),
+          name,
+          amount,
+          freq
+        });
+        document.getElementById('incName').value = '';
+        document.getElementById('incAmount').value = '';
+        renderAll();
+        showToast(`Added income: ${name}`);
+      });
+
+      // Add Expense
+      document.getElementById('expenseForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('expName').value.trim();
+        const category = document.getElementById('expCategory').value;
+        const amount = parseFloat(document.getElementById('expAmount').value);
+        const freq = document.getElementById('expFreq').value;
+        if (!name || isNaN(amount) || amount <= 0) return;
+
+        state.expenses.push({
+          id: 'exp-' + Date.now(),
+          name,
+          category,
+          amount,
+          freq,
+          active: true
+        });
+        document.getElementById('expName').value = '';
+        document.getElementById('expAmount').value = '';
+        renderAll();
+        showToast(`Added ${name} to ${CATEGORY_META[category].label}`);
+      });
+
+      // Add Goal
+      document.getElementById('goalForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('goalName').value.trim();
+        const target = parseFloat(document.getElementById('goalTarget').value);
+        const saved = parseFloat(document.getElementById('goalSaved').value) || 0;
+        const monthly = parseFloat(document.getElementById('goalMonthly').value) || 10;
+        if (!name || isNaN(target) || target <= 0) return;
+
+        state.goals.push({
+          id: 'goal-' + Date.now(),
+          name,
+          target,
+          saved,
+          monthly
+        });
+        document.getElementById('goalName').value = '';
+        document.getElementById('goalTarget').value = '';
+        document.getElementById('goalSaved').value = '0';
+        renderAll();
+        showToast(`Created savings goal: ${name}`);
+      });
+
+      // Quick Presets Modal
+      const presetsModal = document.getElementById('presetsModal');
+      document.getElementById('btnQuickPresets').addEventListener('click', () => {
+        presetsModal.classList.remove('hidden');
+        presetsModal.classList.add('flex');
+      });
+      document.getElementById('btnClosePresets').addEventListener('click', () => {
+        presetsModal.classList.add('hidden');
+        presetsModal.classList.remove('flex');
+      });
+      presetsModal.addEventListener('click', (e) => {
+        if (e.target === presetsModal) {
+          presetsModal.classList.add('hidden');
+          presetsModal.classList.remove('flex');
+        }
+      });
+
+      presetContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-preset-idx]');
+        if (!btn) return;
+        const p = QUICK_PRESETS[Number(btn.getAttribute('data-preset-idx'))];
+        if (!p) return;
+        const convertedAmt = convertAmount(p.amountPKR, 'PKR', state.currency);
+        state.expenses.push({
+          id: 'exp-' + Date.now() + Math.random().toString(36).slice(2, 6),
+          name: p.name,
+          category: p.category,
+          amount: convertedAmt,
+          freq: p.freq,
+          active: true
+        });
+        renderAll();
+        showToast(`Added preset: ${p.name} (${fmtMoney(convertedAmt)})`);
+      });
+
+      // Reset Sample & Clear All
+      document.getElementById('btnResetSample').addEventListener('click', () => {
+        state = getDefaultState();
+        renderAll();
+        showToast('Loaded sample teen budget!');
+      });
+
+      document.getElementById('btnClearAll').addEventListener('click', () => {
+        state.incomes = [];
+        state.expenses = [];
+        state.goals = [];
+        renderAll();
+        showToast('Cleared all items — ready for your numbers!');
+      });
+
+      // Download & Export buttons
+      document.getElementById('btnDownloadAppTop').addEventListener('click', downloadStandaloneHtml);
+      document.getElementById('btnDownloadStandaloneMain').addEventListener('click', downloadStandaloneHtml);
+      document.getElementById('btnExportJson').addEventListener('click', exportBackupJson);
+      document.getElementById('btnExportCsv').addEventListener('click', exportCsv);
+
+      document.getElementById('inputImportJson').addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          try {
+            const imported = JSON.parse(ev.target.result);
+            if (imported && Array.isArray(imported.incomes) && Array.isArray(imported.expenses)) {
+              state = imported;
+              renderAll();
+              showToast('Backup restored!');
+            } else {
+              showToast('Invalid backup file format.');
+            }
+          } catch (err) {
+            showToast('Could not read JSON file.');
+          }
+        };
+        reader.readAsText(file);
+      });
+
+      // Delegated clicks for dynamic items
+      document.body.addEventListener('click', (e) => {
+        const delInc = e.target.closest('[data-del-income]');
+        if (delInc) {
+          const id = delInc.getAttribute('data-del-income');
+          state.incomes = state.incomes.filter(i => i.id !== id);
+          renderAll();
+          return;
+        }
+
+        const delExp = e.target.closest('[data-del-exp]');
+        if (delExp) {
+          const id = delExp.getAttribute('data-del-exp');
+          state.expenses = state.expenses.filter(x => x.id !== id);
+          renderAll();
+          return;
+        }
+
+        const toggleExp = e.target.closest('[data-toggle-exp]');
+        if (toggleExp) {
+          const id = toggleExp.getAttribute('data-toggle-exp');
+          const target = state.expenses.find(x => x.id === id);
+          if (target) {
+            target.active = target.active === false ? true : false;
+            renderAll();
+          }
+          return;
+        }
+
+        const delGoal = e.target.closest('[data-del-goal]');
+        if (delGoal) {
+          const id = delGoal.getAttribute('data-del-goal');
+          state.goals = state.goals.filter(g => g.id !== id);
+          renderAll();
+          return;
+        }
+
+        const addGoalCash = e.target.closest('[data-add-goal-cash]');
+        if (addGoalCash) {
+          const id = addGoalCash.getAttribute('data-add-goal-cash');
+          const g = state.goals.find(x => x.id === id);
+          if (g) {
+            const boost = getCurrCfg(state.currency).goalBoost;
+            g.saved = Math.min(g.target, (Number(g.saved) || 0) + boost);
+            renderAll();
+            showToast(`Added ${fmtMoney(boost)} toward ${g.name}!`);
+          }
+          return;
+        }
+      });
+
+      // Delegated change for category limits
+      document.body.addEventListener('change', (e) => {
+        const limitInput = e.target.closest('[data-limit-cat]');
+        if (limitInput) {
+          const cat = limitInput.getAttribute('data-limit-cat');
+          state.categoryLimits[cat] = Math.max(0, parseFloat(limitInput.value) || 0);
+          renderAll();
+        }
+      });
+
+      renderAll();
+    });
+  </script>
+
+</body></html>
